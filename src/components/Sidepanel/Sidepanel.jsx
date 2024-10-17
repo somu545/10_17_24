@@ -1,27 +1,31 @@
 import React from "react";
 import dp from "../../assets/dp.jpeg"; 
 import man from "../../assets/man2.jpg"; 
+import nature from "../../assets/nature.jpg"; 
+import woman from "../../assets/woman.jpg"; 
+import mountain from "../../assets/mountain.jpg"; 
 import threads from "../../assets/threads.svg"; 
 import divImage from "../../assets/divImage.jpg"; 
 
 
 const profiles = [
     { name: 'Jane Cooper', image: dp },
-    { name: 'Arlene McCoy', image: dp },
+    { name: 'Arlene McCoy', image: woman },
     { name: 'Cody Fisher', image: dp },
-    { name: 'Cameron Williamson', image: dp },
-    { name: 'Darlene Robertson', image: dp },
+    { name: 'Cameron Williamson', image: mountain },
+    { name: 'Darlene Robertson', image: nature },
 ];
 
 export default function Sidepanel() {
     return (
         <div className="min-h-screen p-4 md:p-8 bg-[url('/src/assets/background.jpg')] bg-cover bg-center">
-            <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-6 rounded-2xl backdrop-blur-sm bg-gray-500 bg-opacity-10 mt-10" > 
+         
+            <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-6 rounded-3xl backdrop-blur-sm bg-gray-500 bg-opacity-10 mt-10" > 
 
                 <aside className="md:w-80 flex-grow mr-1">
                     <div className="flex flex-col mb-6"></div>
                 </aside>
-                <div className="flex-1 border-l-2 border-white border-opacity-50"> 
+                <div className="flex-1 border-l border-white border-opacity-50"> 
                     <div className="p-6">
                     <div className="flex justify-between items-center mb-4">
                          <h2 className="font-semibold text-white">Follow suggestions</h2>
